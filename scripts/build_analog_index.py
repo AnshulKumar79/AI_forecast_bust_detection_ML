@@ -13,7 +13,7 @@ def build_analog_index():
     num_historical_events = 5000
     
     historical_df = pd.DataFrame({
-        'date': pd.date_range(start='2016-01-01', periods=num_historical_events, freq='D'),
+        'date': pd.date_range(end='2025-12-31', periods=num_historical_events, freq='D'),
         'lat': np.random.uniform(8, 38, size=num_historical_events),
         'lon': np.random.uniform(68, 98, size=num_historical_events),
         'month': np.random.randint(1, 13, size=num_historical_events),
